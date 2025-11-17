@@ -21,66 +21,6 @@ on:
         required: true
         type: environment
         default: rafaschmidt-protopia
-      TAG1:
-        description: 'Tag 1'
-        required: false
-        default: 'tag1-default'
-      TAG2:
-        description: 'Tag 2'
-        required: false
-        default: 'tag2-default'
-      TAG3:
-        description: 'Tag 3'
-        required: false
-        default: 'tag3-default'
-      TAG4:
-        description: 'Tag 4'
-        required: false
-        default: 'tag4-default'
-      TAG5:
-        description: 'Tag 5'
-        required: false
-        default: 'tag5-default'
-      TAG6:
-        description: 'Tag 6'
-        required: false
-        default: 'tag6-default'
-      TAG7:
-        description: 'Tag 7'
-        required: false
-        default: 'tag7-default'
-      TAG8:
-        description: 'Tag 8'
-        required: false
-        default: 'tag8-default'
-      TAG9:
-        description: 'Tag 9'
-        required: false
-        default: 'tag9-default'
-      TAG10:
-        description: 'Tag 10'
-        required: false
-        default: 'tag10-default'
-      TAG11:
-        description: 'Tag 11'
-        required: false
-        default: 'tag11-default'
-      TAG12:
-        description: 'Tag 12'
-        required: false
-        default: 'tag12-default'
-      TAG13:
-        description: 'Tag 13'
-        required: false
-        default: 'tag13-default'
-      TAG14:
-        description: 'Tag 14'
-        required: false
-        default: 'tag14-default'
-      TAG15:
-        description: 'Tag 15'
-        required: false
-        default: 'tag15-default'
 
 jobs:
   log-the-inputs:
