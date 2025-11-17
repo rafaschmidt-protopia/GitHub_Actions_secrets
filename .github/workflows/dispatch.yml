@@ -1,14 +1,32 @@
 name: dispatch
+
 on:
   workflow_dispatch:
-    inputs:
-
+    inputs: 
+      LEVEL:
+        description: 'Log level'
+        required: true
+        default: warning
+        type: choice
+        options:
+          - debug
+          - info
+          - warning
+      TAGS:
+        description: 'Tags to filter'
+        required: false
+        default: ''
+      ENVIRONMENT:
+        description: 'Deployment environment'
+        required: true
+        type: environment
+        default: rafaschmidt-protopia
 
 jobs:
   log-the-inputs:
     runs-on: ubuntu-latest
     steps:
-        run: |
+      - run: |
           echo "Log level: $LEVEL"
           echo "Tags: $TAGS"
           echo "Environment: $ENVIRONMENT"
