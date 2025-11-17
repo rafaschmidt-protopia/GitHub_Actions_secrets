@@ -29,7 +29,6 @@ jobs:
       - name: Checkout scripts only
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
           sparse-checkout: |
             .github/scripts
       
