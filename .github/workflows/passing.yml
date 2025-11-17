@@ -13,9 +13,10 @@ jobs:
     steps:
       - name: Set color
         id: color-selector
-        run: <SET VARIABLE>
+        run: |
+          echo "COLOR=blue" >> "$GITHUB_OUTPUT"
       - name: Get color
-        run: echo "The selected color is $COLOR"
+        run: echo "The selected color is ${{ steps.color-selector.outputs.COLOR }}"
     
         
   producer:
@@ -25,6 +26,8 @@ jobs:
         id: sentence_maker
         run: |
           echo "VARIABLE_NAME=VALUE" >> "$GITHUB_OUTPUT"
+    outputs:
+      VARIABLE_NAME: ${{ steps.sentence_maker.outputs.VARIABLE_NAME }}
 
   consumer:
     runs-on: ubuntu-latest
