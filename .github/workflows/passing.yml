@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: producer
     env:
-      message: ${{ jobs.producer.outputs.VARIABLE_NAME }}
+      message: ${{ needs.producer.outputs.VARIABLE_NAME }}
     steps:
       - name: Print the message
         run: |
